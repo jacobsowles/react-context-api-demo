@@ -1,6 +1,6 @@
 # react-context-api-demo
 
-Toggle the app theme using a higher-order component that leverages the React Context API.
+Toggle the app theme using a higher-order component that leverages the [React Context API](https://reactjs.org/docs/context.html).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
