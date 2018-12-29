@@ -1,25 +1,21 @@
 import classNames from "classnames";
 import React from "react";
 
-import { ThemeConsumer } from "../ThemeContext";
+import withTheme from "../../withTheme";
 import "./ThemeToggle.css";
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ themeContext }) => {
   return (
-    <ThemeConsumer>
-      {context => (
-        <button
-          className={classNames(
-            "theme-toggle",
-            `theme-toggle__${context.theme}`
-          )}
-          onClick={context.toggleTheme}
-        >
-          Toggle Theme
-        </button>
+    <button
+      className={classNames(
+        "theme-toggle",
+        `theme-toggle__${themeContext.name}`
       )}
-    </ThemeConsumer>
+      onClick={themeContext.toggleTheme}
+    >
+      Toggle Theme
+    </button>
   );
 };
 
-export default ThemeToggle;
+export default withTheme(ThemeToggle);

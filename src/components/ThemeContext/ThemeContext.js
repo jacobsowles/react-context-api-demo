@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 
 const ThemeContext = React.createContext({
-  theme: undefined,
+  name: undefined,
   toggleTheme: undefined
 });
 
@@ -10,20 +10,20 @@ class ThemeProvider extends PureComponent {
     super(props);
 
     this.state = {
-      theme: "light"
+      name: "light"
     };
   }
 
   toggleTheme = () => {
-    this.setState(({ theme }) => ({
-      theme: theme === "light" ? "dark" : "light"
+    this.setState(({ name }) => ({
+      name: name === "light" ? "dark" : "light"
     }));
   };
 
   render() {
     return (
       <ThemeContext.Provider
-        value={{ theme: this.state.theme, toggleTheme: this.toggleTheme }}
+        value={{ name: this.state.name, toggleTheme: this.toggleTheme }}
       >
         {this.props.children}
       </ThemeContext.Provider>

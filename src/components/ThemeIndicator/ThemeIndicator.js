@@ -1,24 +1,21 @@
 import classNames from "classnames";
 import React from "react";
 
-import { ThemeConsumer } from "../ThemeContext";
+import withTheme from "../../withTheme";
 import "./ThemeIndicator.css";
 
-const ThemeIndicator = () => {
+const ThemeIndicator = ({ themeContext }) => {
   return (
-    <ThemeConsumer>
-      {context => (
-        <h1
-          className={classNames(
-            "theme-indicator",
-            `theme-indicator__${context.theme}`
-          )}
-        >
-          {context.theme.charAt(0).toUpperCase() + context.theme.slice(1)} Theme
-        </h1>
+    <h1
+      className={classNames(
+        "theme-indicator",
+        `theme-indicator__${themeContext.name}`
       )}
-    </ThemeConsumer>
+    >
+      {themeContext.name.charAt(0).toUpperCase() + themeContext.name.slice(1)}{" "}
+      Theme
+    </h1>
   );
 };
 
-export default ThemeIndicator;
+export default withTheme(ThemeIndicator);
