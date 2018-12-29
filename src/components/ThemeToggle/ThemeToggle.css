@@ -1,0 +1,31 @@
+.theme-toggle {
+  border: 1px solid #e6e6e6;
+  padding: 8px 16px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle__light {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #ffffff;
+}
+
+.theme-toggle__light:hover {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.theme-toggle__dark {
+  background-color: #ffffff;
+  border-color: #e6e6e6;
+  color: #333333;
+}
+
+.theme-toggle__dark:hover {
+  background-color: #e6e6e6;
+  border-color: #d3d3d3;
+}

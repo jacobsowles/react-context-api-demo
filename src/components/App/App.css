@@ -1,0 +1,18 @@
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.app__light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.app__dark {
+  background-color: #333333;
+  color: #ffffff;
+}

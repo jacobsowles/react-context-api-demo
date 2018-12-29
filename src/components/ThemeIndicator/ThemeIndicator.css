@@ -1,0 +1,11 @@
+.theme-indicator {
+  font-weight: 300;
+}
+
+.theme-indicator__light {
+  color: #333333;
+}
+
+.theme-indicator__dark {
+  color: #ffffff;
+}
