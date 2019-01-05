@@ -1,31 +1,15 @@
 .theme-toggle {
-  border: 1px solid #e6e6e6;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 300;
   padding: 8px 16px;
 }
 
 .theme-toggle:hover {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.theme-toggle__smol {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  color: #ffffff;
-}
-
-.theme-toggle__smol:hover {
   background-color: #449d44;
   border-color: #398439;
-}
-
-.theme-toggle__big {
-  background-color: #ffffff;
-  border-color: #e6e6e6;
-  color: #333333;
-}
-
-.theme-toggle__big:hover {
-  background-color: #e6e6e6;
-  border-color: #d3d3d3;
+  cursor: pointer;
+  transition: 0.3s;
 }

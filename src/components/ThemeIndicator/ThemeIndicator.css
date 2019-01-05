@@ -1,13 +1,7 @@
 .theme-indicator {
-  font-weight: 300;
-}
-
-.theme-indicator__smol {
-  color: #333333;
-  font-size: 1.5em;
-}
-
-.theme-indicator__big {
-  color: #ffffff;
-  font-size: 3em;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  margin-bottom: 20px;
+  padding: 10px 10px 60px 10px;
 }

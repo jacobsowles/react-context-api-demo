@@ -6,13 +6,3 @@
   height: 100vh;
   justify-content: center;
 }
-
-.app__smol {
-  background-color: #ffffff;
-  color: #333333;
-}
-
-.app__big {
-  background-color: #333333;
-  color: #ffffff;
-}
