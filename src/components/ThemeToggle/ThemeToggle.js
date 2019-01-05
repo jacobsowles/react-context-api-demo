@@ -6,7 +6,7 @@ import "./ThemeToggle.css";
 const ThemeToggle = ({ themeContext }) => {
   return (
     <button className="theme-toggle" onClick={themeContext.toggleTheme}>
-      Switch to {themeContext.name === "smol" ? "Big" : "Smol"} Theme
+      Watch me grow{themeContext.name === "smol" ? " up" : "...down?"}
     </button>
   );
 };
