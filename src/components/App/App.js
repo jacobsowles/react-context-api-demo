@@ -2,7 +2,6 @@ import React, { PureComponent } from "react";
 
 import ThemeIndicator from "../ThemeIndicator";
 import ThemeToggle from "../ThemeToggle";
-import withTheme from "../../withTheme";
 import "./App.css";
 
 class App extends PureComponent {
@@ -16,4 +15,4 @@ class App extends PureComponent {
   }
 }
 
-export default withTheme(App);
+export default App;
