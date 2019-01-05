@@ -1,21 +1,25 @@
 import React from "react";
 
-import withTheme from "../../withTheme";
+import { ThemeConsumer } from "../ThemeContext";
 import "./ThemeIndicator.css";
 
-const ThemeIndicator = ({ themeContext }) => {
+const ThemeIndicator = () => {
   return (
-    <div className="theme-indicator">
-      <h1>
-        {themeContext.name} Moose, age{" "}
-        {themeContext.name === "smol" ? "3" : "6"} months
-      </h1>
-      <img
-        src={`./${themeContext.name}-puppy.png`}
-        alt={`${themeContext.name} puppy`}
-      />
-    </div>
+    <ThemeConsumer>
+      {context => (
+        <div className="theme-indicator">
+          <h1>
+            {context.name} Moose, age {context.name === "smol" ? "3" : "6"}{" "}
+            months
+          </h1>
+          <img
+            src={`./${context.name}-puppy.png`}
+            alt={`${context.name} puppy`}
+          />
+        </div>
+      )}
+    </ThemeConsumer>
   );
 };
 
-export default withTheme(ThemeIndicator);
+export default ThemeIndicator;

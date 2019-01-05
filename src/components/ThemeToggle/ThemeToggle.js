@@ -1,14 +1,18 @@
 import React from "react";
 
-import withTheme from "../../withTheme";
+import { ThemeConsumer } from "../ThemeContext";
 import "./ThemeToggle.css";
 
-const ThemeToggle = ({ themeContext }) => {
+const ThemeToggle = () => {
   return (
-    <button className="theme-toggle" onClick={themeContext.toggleTheme}>
-      Watch me grow{themeContext.name === "smol" ? " up" : "...down?"}
-    </button>
+    <ThemeConsumer>
+      {context => (
+        <button className="theme-toggle" onClick={context.toggleTheme}>
+          Watch me grow{context.name === "smol" ? " up" : "...down?"}
+        </button>
+      )}
+    </ThemeConsumer>
   );
 };
 
-export default withTheme(ThemeToggle);
+export default ThemeToggle;
