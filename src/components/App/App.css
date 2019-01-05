@@ -7,12 +7,12 @@
   justify-content: center;
 }
 
-.app__light {
+.app__smol {
   background-color: #ffffff;
   color: #333333;
 }
 
-.app__dark {
+.app__big {
   background-color: #333333;
   color: #ffffff;
 }

@@ -2,10 +2,12 @@
   font-weight: 300;
 }
 
-.theme-indicator__light {
+.theme-indicator__smol {
   color: #333333;
+  font-size: 1.5em;
 }
 
-.theme-indicator__dark {
+.theme-indicator__big {
   color: #ffffff;
+  font-size: 3em;
 }

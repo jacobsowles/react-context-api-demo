@@ -8,24 +8,24 @@
   transition: 0.3s;
 }
 
-.theme-toggle__light {
+.theme-toggle__smol {
   background-color: #5cb85c;
   border-color: #4cae4c;
   color: #ffffff;
 }
 
-.theme-toggle__light:hover {
+.theme-toggle__smol:hover {
   background-color: #449d44;
   border-color: #398439;
 }
 
-.theme-toggle__dark {
+.theme-toggle__big {
   background-color: #ffffff;
   border-color: #e6e6e6;
   color: #333333;
 }
 
-.theme-toggle__dark:hover {
+.theme-toggle__big:hover {
   background-color: #e6e6e6;
   border-color: #d3d3d3;
 }

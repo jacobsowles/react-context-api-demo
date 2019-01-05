@@ -10,13 +10,13 @@ class ThemeProvider extends PureComponent {
     super(props);
 
     this.state = {
-      name: "light"
+      name: "smol"
     };
   }
 
   toggleTheme = () => {
     this.setState(({ name }) => ({
-      name: name === "light" ? "dark" : "light"
+      name: name === "smol" ? "big" : "smol"
     }));
   };
 
